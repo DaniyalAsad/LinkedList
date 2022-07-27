@@ -114,6 +114,16 @@ class LinkedList
 		}
 	}
 	
+		int getNthElement(Node* head,int x)
+	{
+		Node *temp = head;
+		for(int i=1;i<x;i++) 
+		{
+		temp=temp->link;
+		}
+		return temp->data;
+	}
+	
 	
 };
 
